@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+            let number1 = Number(document.getElementById("fnumber").value)
+            let number2 = Number(document.getElementById("snumber").value)
+            let sum  = number1 + number2
+            document.getElementById("output").innerHTML = "The sum of "+number1+" and "+number2+" is "+sum
+        }
+        function multiply(){
+            let number1 = Number(document.getElementById("fnumber").value)
+            let number2 = Number(document.getElementById("snumber").value)
+            let product= number1*number2
+            document.getElementById("output").innerHTML="the product of: "+number1+" and "+number2+" is "+product
+            
+        }
+        function substract(){
+            let number1 = Number(document.getElementById("fnumber").value)
+            let number2 = Number(document.getElementById("snumber").value)
+            let difference=number1-number2
+            document.getElementById("output").innerHTML="the difference between: "+number1+" and "+number2+" is "+difference
+
+        }
+        function division(){
+            let number1 = Number(document.getElementById("fnumber").value)
+            let number2 = Number(document.getElementById("snumber").value)
+            let quotient= number1/number2
+            document.getElementById("output").innerHTML="the quotient of: "+number1+" and "+number2+" is "+quotient
+
+
+        }
+        
+    </script>
+</head>
+<body>
+    <input id="fnumber" type="number" placeholder="first number">
+    <input id="snumber" type="number" placeholder="second number">
+    <button onclick="add()">add</button>
+    <button onclick="multiply()">multiply</button>
+    <button onclick="substract()">substract</button>
+    <button onclick="division()">divide</button>
+    <p id="output"></p>
+    
+</body>
+</html>
